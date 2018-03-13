@@ -69,8 +69,7 @@ $(function(){
 					<li class="nLi on">
 						<h3>排行</h3>
 						<ul class="sub">
-							<li><a href="">点击排行</a></li>
-							<li><a href="">黑名单</a></li>
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Hot/click">点击排行</a></li>
 						</ul>
 					</li>
 					

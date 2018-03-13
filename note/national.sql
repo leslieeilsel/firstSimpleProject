@@ -58,3 +58,9 @@ create table picsclick(
 	ip varchar(20) default '0.0.0.0',
 	newsid int
 );
+
+--权职表
+create table power(
+	id int key auto_increment,
+	coname varchar(20)
+);
