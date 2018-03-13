@@ -1,0 +1,163 @@
+<script type="text/javascript">
+
+function getCateSon(){
+	//获取一级栏目选择的栏目id值
+	var fcid=$("[name='fcid']").val();
+	if(fcid!=0){
+	//通过ajax把栏目id传给 控制器news--->actionCate
+	$.ajax({
+		url:'{:U('Admin/Photo/selectTwo')}',
+		data:'fcid='+fcid,
+		success:function(re){
+				//ajax处理返回值。
+				re="<option value='0'>选择二级</option>"+re;
+				$("[name='cateid']").html(re);
+				//二级栏目选中
+				$("[name='cateid']").val({$cateid});
+			}
+		})
+	}else{
+		$("[name='cateid']").html("<option value='0'>选择二级</option>");
+	}
+}
+</script>
+
+<div class="fixed">
+<div class="nav"><h1>栏目管理</h1></div>
+<div class="search">
+	<form method="get" action="{:U('Admin/Photo/oper')}">
+	    <!-- <input type="hidden" name="r" value="{:U('Admin/Photo/oper')}"/> -->
+	    <div class="fcate">
+	    	栏目 : <select onchange="getCateSon();" name="fcid" id="fcid">
+			<option value="0">选择一级</option>
+			{$cateOne}
+		</select>
+		</div>
+		<div class="scate">
+			<select name="cateid" id="cateid">
+			<option value='0'>选择二级</option>
+			{$cateTwo}
+			</select>&nbsp;
+		</div>
+		<div class="title">
+			标题 : 
+			<input type="text" name="title" value="{$title}" id="title"/>&nbsp;
+		</div>
+		
+		<div class="wrap">
+			<div>推荐 : </div>
+				<if condition="$v.recommend eq 0">
+					<input type="checkbox" id="checkbox_c1" class="chk_3" name="recommend" value="1"/><label for="checkbox_c1"></label>
+				<elseif condition="$v.recommend eq 1"/>
+					<input type="checkbox" id="checkbox_c2" class="chk_3" name="recommend" value="0" checked='checked'/><label for="checkbox_c2"></label>
+				</if>
+		</div>
+		
+		<div class="date">
+			<div class="inline">
+				<div>
+					日期区间 :&nbsp;&nbsp;
+				</div>
+				<input type="text" class="inline laydate-icon" name="starttime" id="start" style="width:150px; margin-right:10px;"/>
+				
+					-&nbsp;&nbsp;
+				
+				<input type="text" class="inline laydate-icon" name="endtime" id="end" style="width:150px; margin-right:10px;"/>
+			</div>
+		</div>
+		<div class="tijiao">
+			<input type="submit" value="查询" id="tijiao"/>
+		</div>	   
+	</form>
+</div>
+</div>
+<div class="tab">
+	<table style="width:100%" class="table">
+		<tr>
+			<th width="15%">Id</th>
+			<th width="15%">标题</th>
+			<th width="15%">栏目</th>
+			<th width="15%">点击图片以预览</th>
+			<th width="20%">添加时间</th>
+			<th width="20%">操作</th>
+		</tr>
+		<foreach name='arr' item='v'>
+		<tr>
+			<th>{$v.id}</th>
+			<td>{$v.title}</td>
+			<th>{$v.cname}</th>
+			<th>
+			 <ul id="{$v.id}">
+				<li style="list-style-type:none;">
+					<img data-original="__PUBLIC__/upload/{$v.imagename}" src="__PUBLIC__/upload/{$v.imagename}" alt="" width="60px" height="40px"/>
+				</li>
+			 </ul>
+			</th>
+			<th>{$v.pubtime}</th>
+			<th>
+				<a href="__URL__/update/id/{$v.id}"><img src="__PUBLIC__/admin/images/rewrite.png" alt="修改" title="修改" width="23px"/></a>&nbsp;&nbsp;
+				<a href="__URL__/del/id/{$v.id}/deleted/1" onClick="delcfm()"><img src="__PUBLIC__/admin/images/delete.png" alt="删除" title="删除" width="23px"/></a>&nbsp;&nbsp;
+				<if condition="$v.recommend eq 1">
+					<a href="__URL__/change/id/{$v.id}/recommend/0"><img src="__PUBLIC__/admin/images/down.png" alt="取消推荐" title="取消推荐" width="23px"/></a>
+				<elseif condition="$v.recommend eq 0"/>
+					<a href="__URL__/change/id/{$v.id}/recommend/1"><img src="__PUBLIC__/admin/images/up.png" alt="推荐" title="推荐" width="23px"/></a>
+				</if>
+			</th>
+		</tr>
+		<script type="text/javascript">
+			var viewer = new Viewer(document.getElementById('{$v.id}'), {
+				url: 'data-original'
+			});
+		</script>
+		</foreach>
+	
+	</table>
+<div class="yellow">{$pageStr}</div>
+</div>
+
+<script charset="utf-8" src="__PUBLIC__/admin/js/laydate.js"></script>
+<script type="text/javascript">
+!function(){
+	laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+	laydate({elem: '#demo'});//绑定元素
+}();
+var start = {
+    elem: '#start',
+    format: 'YYYY-MM-DD',
+    min: '2016-01-01', //设定最小日期为当前日期
+    max: '2099-06-16', //最大日期
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+         end.min = datas; //开始日选好后，重置结束日的最小日期
+         end.start = datas //将结束日的初始值设定为开始日
+    }
+};
+var end = {
+    elem: '#end',
+    format: 'YYYY-MM-DD',
+    min: '2016-01-01',
+    max: '2099-06-16',
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+        start.max = datas; //结束日选好后，充值开始日的最大日期
+    }
+};
+laydate(start);
+laydate(end);
+</script>
+<script type="text/javascript">
+    function delcfm() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>
+<script type="text/javascript">
+	document.getElementById("fcid").value="{$fcid}";
+	document.getElementById("cateid").value="{$cateid}";
+	document.getElementById("title").value="{$title}";
+	document.getElementById("start").value="{$starttime}";
+	document.getElementById("end").value="{$endtime}";
+</script>

@@ -1,0 +1,1329 @@
+[ 2016-10-07T00:04:24+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006409s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0140s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001393s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001947s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005301s ]
+
+[ 2016-10-07T15:56:10+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011613s ]
+
+[ 2016-10-07T15:56:13+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000809s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001992s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002581s ]
+
+[ 2016-10-07T15:56:16+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Login/check.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003221s ]
+SQL: SHOW COLUMNS FROM `adminuser` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `adminuser` WHERE ( username = 'admin' and password = 'admin' ) LIMIT 1   [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\LoginController.class.php 第 21 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003082s ]
+
+[ 2016-10-07T15:56:16+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000781s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001920s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002281s ]
+
+[ 2016-10-07T15:56:18+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003759s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `category` WHERE fid=0 and deleted=0  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `category` WHERE fid=1 and deleted=0  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: cateStr D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 15 行.
+SQL: SELECT * FROM `category` WHERE fid=2 and deleted=0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `category` WHERE fid=7 and deleted=0  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000755s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002899s ]
+
+[ 2016-10-07T15:56:19+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003962s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0167s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0149s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0033s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 77 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000333s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000851s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002467s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002894s ]
+
+[ 2016-10-07T15:57:46+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000104s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002864s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0119s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000689s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002507s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002973s ]
+
+[ 2016-10-07T15:57:48+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003039s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `category` WHERE fid=0 and deleted=0  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `category` WHERE fid=1 and deleted=0  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cateStr D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 15 行.
+SQL: SELECT * FROM `category` WHERE fid=2 and deleted=0  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `category` WHERE fid=7 and deleted=0  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000796s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002540s ]
+
+[ 2016-10-07T15:58:01+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004844s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\www\NG-ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 42 行.
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0140s ]
+SQL: INSERT INTO `photography` (`title`,`cateid`,`content`,`fcid`,`pubtime`,`imagename`,`adminid`) VALUES ('电饭锅电饭锅电饭锅','3','电饭锅电饭锅电饭锅大芬','2',NULL,'57f7558913121.jpg','1') [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000766s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004877s ]
+
+[ 2016-10-07T15:58:04+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004948s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0130s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046245s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046744s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004424s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004867s ]
+
+[ 2016-10-07T15:58:21+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000328s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006303s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `category` WHERE fid=0 and deleted=0  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `category` WHERE fid=1 and deleted=0  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cateStr D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 15 行.
+SQL: SELECT * FROM `category` WHERE fid=2 and deleted=0  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `category` WHERE fid=7 and deleted=0  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000714s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004641s ]
+
+[ 2016-10-07T15:58:33+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005147s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\www\NG-ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 42 行.
+
+[ 2016-10-07T15:58:35+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008629s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\www\NG-ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 42 行.
+
+[ 2016-10-07T15:59:18+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0131s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000795s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003005s ]
+
+[ 2016-10-07T16:00:04+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001977s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003340s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `category` WHERE fid=0 and deleted=0  [ RunTime:0.0016s ]
+SQL: SELECT * FROM `category` WHERE fid=1 and deleted=0  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined variable: cateStr D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 15 行.
+SQL: SELECT * FROM `category` WHERE fid=2 and deleted=0  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `category` WHERE fid=7 and deleted=0  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000734s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001744s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002766s ]
+
+[ 2016-10-07T16:00:14+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002407s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\www\NG-ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 42 行.
+
+[ 2016-10-07T16:00:35+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/save.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004292s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\PHP\www\NG-ThinkPHP\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 42 行.
+NOTIC: [8] Undefined index: imagename D:\PHP\www\NG-ThinkPHP\Application\Admin\Controller\PhotoController.class.php 第 51 行.
+
+[ 2016-10-07T16:02:58+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000085s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003634s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0122s ]
+ERR: 1054:Unknown column 'n.id' in 'field list'
+ [ SQL语句 ] : SELECT n.id,n.title,c.cname FROM `photography` INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc 
+ERR: 1054:Unknown column 'n.id' in 'field list'
+ [ SQL语句 ] : SELECT n.id,n.title,c.cname FROM `photography` INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc 
+
+[ 2016-10-07T16:03:08+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003193s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0114s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000328s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003448s ]
+
+[ 2016-10-07T16:03:23+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003159s ]
+
+[ 2016-10-07T16:03:53+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001905s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002771s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `photography` ORDER BY id desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Undefined index: cname D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 73 行.
+NOTIC: [8] Undefined index: cname D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 73 行.
+NOTIC: [8] Undefined index: cname D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 73 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003081s ]
+
+[ 2016-10-07T16:04:35+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002694s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0141s ]
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`title`,`cname` FROM `photography` INNER JOIN category on cateid=id  ORDER BY id desc 
+ERR: 1052:Column 'id' in field list is ambiguous
+ [ SQL语句 ] : SELECT `id`,`title`,`cname` FROM `photography` INNER JOIN category on cateid=id  ORDER BY id desc 
+
+[ 2016-10-07T16:06:21+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002798s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0140s ]
+SQL: SELECT n.id,n.title,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000805s ]
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined index: pubtime D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 74 行.
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002839s ]
+
+[ 2016-10-07T16:06:53+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002858s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0119s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000818s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037041s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002270s ]
+
+[ 2016-10-07T16:08:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002711s ]
+
+[ 2016-10-07T16:12:23+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003424s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0051s ]
+
+[ 2016-10-07T16:30:06+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004207s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000407s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006194s ]
+
+[ 2016-10-07T16:31:28+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003502s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000810s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003247s ]
+
+[ 2016-10-07T16:31:29+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002444s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000773s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038044s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002823s ]
+
+[ 2016-10-07T16:31:29+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004124s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000876s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002435s ]
+
+[ 2016-10-07T16:32:38+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002884s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2016-10-07T16:38:05+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005786s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000348s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000859s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003912s ]
+
+[ 2016-10-07T16:39:19+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000109s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002835s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000931s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004030s ]
+
+[ 2016-10-07T16:39:21+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003035s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000829s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002644s ]
+
+[ 2016-10-07T16:39:22+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000202s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003354s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000300s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000728s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007756s ]
+
+[ 2016-10-07T16:39:22+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004065s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0184s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000444s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012726s ]
+
+[ 2016-10-07T16:39:22+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000145s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007722s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000387s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000947s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002672s ]
+
+[ 2016-10-07T16:40:44+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004447s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000742s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039181s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003492s ]
+
+[ 2016-10-07T16:40:45+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000348s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002719s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003813s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003340s ]
+
+[ 2016-10-07T16:40:45+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008417s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002358s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005776s ]
+
+[ 2016-10-07T16:40:45+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004237s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000916s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002164s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+
+[ 2016-10-07T16:40:46+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002763s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003671s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003324s ]
+
+[ 2016-10-07T16:40:46+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000105s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005808s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000308s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000741s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003036s ]
+
+[ 2016-10-07T16:40:46+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003336s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017749s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003123s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0194s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000314s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000764s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 78 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003694s ]
+
+[ 2016-10-07T16:41:10+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003483s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000759s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035599s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002767s ]
+
+[ 2016-10-07T16:41:11+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002591s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003206s ]
+
+[ 2016-10-07T16:41:12+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000108s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002970s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004552s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000612s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001214s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002763s ]
+
+[ 2016-10-07T16:47:52+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003602s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000307s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000757s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002981s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003699s ]
+
+[ 2016-10-07T16:47:54+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000725s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001779s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003425s ]
+
+[ 2016-10-07T16:47:54+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003291s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001540s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004517s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003771s ]
+
+[ 2016-10-07T16:47:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003578s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003452s ]
+
+[ 2016-10-07T16:47:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003163s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000343s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000834s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037755s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002934s ]
+
+[ 2016-10-07T16:47:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004569s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0124s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001007s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002990s ]
+
+[ 2016-10-07T17:01:50+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002333s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008788s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000691s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001301s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003905s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003234s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003683s ]
+
+[ 2016-10-07T17:01:53+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003642s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003094s ]
+
+[ 2016-10-07T17:01:54+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002839s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000396s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039257s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003515s ]
+
+[ 2016-10-07T17:01:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005355s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000675s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001534s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005242s ]
+
+[ 2016-10-07T17:01:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014713s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007901s ]
+
+[ 2016-10-07T17:01:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003596s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000560s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001620s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001832s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004377s ]
+
+[ 2016-10-07T17:01:56+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005769s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002903s ]
+
+[ 2016-10-07T17:01:56+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/Admin/Photo/oper
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003176s ]
+SQL: SHOW COLUMNS FROM `photography` [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `photography` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT n.id,n.title,n.pubtime,c.cname FROM photography n INNER JOIN category c on n.cateid=c.id  ORDER BY n.id desc LIMIT 0,5   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001040s ]
+NOTIC: [8] Undefined variable: pageStr D:\PHP\www\NG-ThinkPHP\Application\Runtime\Cache\Admin\61b923a656c5994b088a47a17108363e.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002781s ]
+

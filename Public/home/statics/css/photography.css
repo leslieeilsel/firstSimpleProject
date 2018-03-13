@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+.content{
+    width:1000px;
+    margin:0 auto;
+	background:#fff;
+    color:#333;
+	overflow:hidden;
+	font-family:"Microsoft Yahei",arial,"STHeiti",sans-serif;
+    }
+body{
+	background:#303b47;
+	}
+.bottom{
+	background:#303b47;
+	}
+.bottom ul{
+	overflow:hidden;
+	margin:0;
+	} 
+.bottom ul li{
+   color:#f6f6f6;
+   border:1px solid #303b47;
+   }
+.bottom ul  .first-li a{
+   color:#f7c700;
+   }
+.Nav ul .third-li{
+   background-color:#303b47;
+   }
+.foot{
+   background:#fff;
+   }
+.box{
+	overflow:hidden;
+	padding:0 25px;
+	padding-bottom:10px;
+	}
+.left{
+	width:625px;
+	float:left;
+	border-right:1px solid #ebebeb;
+	}
+.right{
+	overflow:hidden;
+	padding:0 0 5px 24px;
+	
+	}
+.left p{
+	font-size:14px;
+	padding:8px 0;
+	}
+.log-title{
+	display:inline-block;
+	width:8px;
+	height:14px;
+	background:#99ccfd;
+	vertical-align:-2px;
+	margin-right:6px;
+	}
+.every-pic-p{
+	margin-top:0;
+	}
+.content-img{
+	overflow:hidden;
+	font-size:12px;
+	}
+.Dl{
+	float: left;
+	color: #00479d;
+	height: auto;
+	margin-right:32px;
+    width:180px;
+	}
+.Dl dd{
+	overflow:hidden;
+	width:180px;
+	}
+.T-dl{
+  	width:180px;
+   margin-right:0px;
+	}
+.Dl dd{
+	margin-bottom:10px;
+	padding-right:0;
+	}
+.silde-content {
+	overflow: hidden;
+	width:603px;
+	background:#333334;
+	color:#fff;
+	margin:0 auto;
+	font-size:12px;
+    margin-left:0px;
+	height:120px;
+    }
+.F-arrow-box {
+	float: left;
+    }
+.S-arrow-box {
+	float:right;
+	}
+.F-arrow-box,.S-arrow-box{
+	text-align:center;
+	padding:49px 23px;
+	}
+.F-arrow-box img,.S-arrow-box img{
+	cursor:pointer;
+	}
+.middle-slide-box {
+	overflow: hidden;
+	color:#fff;
+	display:inline-block;
+	width:468px;
+	margin-left:9px;
+    }
+.middle-slide-box ul {
+	overflow:hidden;
+	position:relative;	
+	width:161%;
+	padding-top:17px;
+    }
+.middle-slide-box li {
+	float:left;
+	margin-left:10px;
+	display:block;
+	width:105px;
+    }
+.middle-slide-box ul li img {
+	cursor:pointer;
+    }
+.everyday-img{
+	margin:16px 0 0 0;
+	background-color:#fdd000;
+	padding:7px 0 5px 15px;
+	}
+.R-ul{
+	padding-bottom:16px;
+	background-color:#f9f9f9;
+	}
+.R-ul ul li{ 
+    list-style-image:url(../images/dili/star.png);
+	margin:8px 0 0 18px;
+	}
+.R-ul ul li a{
+	color:#666;
+	}
+.R-ul ul .two-word{
+	width:35px;
+	}
+.R-ul ul .five-word{
+	width:84px;
+	}
+.R-ul ul .four-word{
+	width:68px;
+	}
+.R-ul ul li:hover{ 
+	list-style-image:url(../images/dili/star2.png);
+	}
+.M-adver .M-F-dd{
+	color:#666;
+	}
+.M-adver  a{
+	color:#00479d; 
+	}
+.M-adver dd{
+	margin-top:12px;
+	color:#00479d;
+	}
+.Nline{
+	margin:16px 0 ;
+	border-bottom:0.5px solid  #aeaeae;
+	}
+.M-adver{
+	font-size: 14px;
+    }
+ /**************more****************/	
+.bottom-content{
+	background: #282e5c;
+	color: #b3c9de;
+	font-size: 14px;
+	margin: 0 20px 30px 20px;
+	padding: 8px 10px;
+	}
+.bottom-content img,.bottom-content a{ 
+   vertical-align:text-bottom;
+   color:#b3c9de;
+    }

@@ -1,0 +1,80 @@
+<script type="text/javascript"> 
+   $(function(){ 
+         $("#submit").click(function(){ 
+              $("form[name='form']").submit();
+         }) 
+    }) 
+</script>
+<div class="fixed">
+	<div class="nav"><h1>栏目管理</h1></div>
+	<div class="search">
+		<p>* 如有更改,请点击 <u>刷新列表</u> *</p> 
+	</div>
+</div>
+<div class="tab">
+	
+	<form action="__URL__/saveOrder" method="post">
+	<table style="width:100%" class="table">
+		<tr>
+			<th width="20%">ID</th>
+			<th width="20%">排序值</th>
+			<th width="30%">名称</th>
+			<!-- <th width="15%">是否显示</th> -->
+			<th width="30%">操作</th>
+		</tr>
+		<foreach name='arr' item='v'>
+		<tr>
+			<th>{$v.id}</th>
+			
+			<th>
+				<input type="text" name="ordernum[{$v.id}]" value="{$v.ordernum}" style="width:100px;text-align:center"/>
+			</th>
+			
+			<if condition="$v.fid eq 0">
+				<td style="padding-left:20px">+— &nbsp;:&nbsp; {$v.cname}</td>
+			<else/>
+				<td style="padding-left:20px">+———— &nbsp;:&nbsp; {$v.cname}</td>
+			</if>
+			
+			<!-- 
+			是否显示
+			<td style="text-align:center">
+				<if condition="$v.isshow eq 0">
+					<input type="radio" name="isshow" value='0' checked='checked'/>{$v.isshow}不显示&nbsp;&nbsp;
+					<input type="radio" name="isshow[{$v.id}]" value="1"/>显示
+				<elseif condition="$v.isshow eq 1"/>
+					<input type="radio" name="isshow[{$v.id}]" value='0'/>不显示&nbsp;&nbsp;
+					<input type="radio" name="isshow" value="1" checked='checked'/>{$v.isshow}显示
+				</if>
+			</td> -->
+			
+			
+			<th>
+				<a href="__MODULE__/Category/update/id/{$v.id}"><img src="__PUBLIC__/admin/images/rewrite.png" alt="修改" title="修改" width="23px"/></a>&nbsp;&nbsp;
+				<a href="__MODULE__/Category/del/id/{$v.id}/deleted/1" onClick="delcfm()"><img src="__PUBLIC__/admin/images/delete.png" alt="删除" title="删除" width="23px"/></a>
+			</th>
+			
+		</tr>
+		</foreach>
+	</table>
+	<table class="submit">
+		
+		<tr>
+			<td colspan="2"><input type="submit" value="刷新列表"  onClick="orderallcfm()" id="submit"/></td>
+		</tr>
+	</table>
+	</form>
+</div>
+<script type="text/javascript">
+    function orderallcfm() {
+        if (!confirm("确认提交排序？")) {
+            window.event.returnValue = false;
+        }
+    }
+
+    function delcfm() {
+        if (!confirm("确认删除此栏目？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>

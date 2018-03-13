@@ -1,0 +1,42 @@
+[ 2016-10-08T15:16:29+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/css/__PUBLIC__/admin/images/welcome.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T15:17:14+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/admin/images/welcome.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T15:18:52+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/admin/images/welcome.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001067s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T15:20:08+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/css/welcome.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T17:56:11+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/upload/57f8bfd33cce0.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T19:05:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/57f8c4069b018.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Public
+
+[ 2016-10-08T19:05:55+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/57f8c4069b018.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+ERR: 无法加载模块:Public
+

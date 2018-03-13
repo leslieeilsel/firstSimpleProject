@@ -1,0 +1,49 @@
+<div class="fixed">
+	<div class="nav"><h1>修改栏目</h1></div>
+</div>
+<div class="tab">
+	<form action="{:U('Admin/Category/usave')}" method="post">
+	<table class="table" style="width:100%;">
+		<tr>
+			<td>栏目名称：</td>
+			<td><input type="text" name="cname" value="{$arr.cname}"/></td>
+		</tr>
+		<tr>
+			<td>父栏目：</td>
+			<td>
+			<select name="fid" id="fid">
+				<option value="0">顶级栏目</option>
+				<volist name="arr1" id="vo">
+				<option value="{$vo.id}">{$vo.cname}</option>
+				</volist>
+			</select>
+			</td>
+		</tr>
+		<tr>
+		<td>导航显示：</td>
+		<td>
+		<if condition="$arr.isshow eq 0">
+			<input checked='checked' type="radio" name="isshow" value='0'/>不显示&nbsp;
+			<input type="radio" name="isshow" value="1"/>显示
+		<elseif condition="$arr.isshow eq 1"/>
+			<input type="radio" name="isshow" value='0'/>不显示&nbsp;
+			<input type="radio" name="isshow" value="1" checked='checked'/>显示	
+		</if>
+		</td>
+	</tr>
+	<tr>
+		<td>排序：</td>
+		<td><input type="text" name="ordernum" value="{$arr.ordernum}"/></td>
+	</tr>
+	</table>
+	<table class="submit">
+	<tr>
+		<td><input type="hidden" name="id" value="{$arr.id}"/></td>
+		<td colspan="2"><input type="submit" value="提交" id="submit"/></td>
+	</tr>
+	</table>
+	</form>
+</div>
+<script type="text/javascript">
+	document.getElementById("fid").value="{$arr.fid}";
+</script>

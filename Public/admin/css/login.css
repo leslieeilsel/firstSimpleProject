@@ -1,0 +1,102 @@
+*{margin:0px; padding:0px;}
+body{font-family:"SimSun"; color:#555555;  }
+ul,ol,li{list-style-type:none;}
+a{text-decoration:none;}
+img{border:none;}
+html,body{
+    margin:0px;
+    height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	background-size:cover;
+	overflow:hidden;
+}
+
+.rain{
+	position:fixed;
+	z-index:-999;
+}
+.main-login{
+	position:fixed;
+	z-index:999;
+	width:100%;
+	height:150px;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	top:35%;
+}
+
+.login-content{
+	width:400px;
+	background:#fff;
+	margin-top:-52px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid #425f8c;
+}
+h2{
+	text-align:center;
+	height:50px; 
+	line-height:50px;
+	background:#eee;
+}
+.login-info{
+	width:320px; 
+	height:40px;
+	margin-left:auto;
+	margin-right:auto; 
+	background:#ffffff;
+	border: 2px solid #f0f7fb;
+	margin-top:20px;
+	border:1px solid #ddd;
+}
+.login-info span.user{
+	float:left;
+	width:40px; 
+	height:30px;
+	margin:5px auto 5px auto; 
+	background:url(../images/login/icon-user.gif) no-repeat center center; 
+	border-right:1px solid #a9a9a9
+}
+.login-info span.pwd{
+	float:left;
+	width:40px; 
+	height:30px;
+	margin:5px auto 5px auto; 
+	background:url(../images/login/icon-pwd.png) no-repeat center center; 
+	border-right:1px solid #a9a9a9
+}
+.login-input{
+	width:257px; 
+	line-height: 40px;
+	height:40px;
+	background:#ffffff;
+	border:none;
+	margin:0;
+	padding:0;
+	padding-left:20px;
+
+}
+.login-oper{
+	width:325px; 
+	height:40px;
+	margin-left:auto;
+	margin-right:auto; 
+	margin-top:10px;
+	
+}
+.login-btn{
+	text-align:center;
+	width:100px;
+	height:30px;
+	border:none;
+	background:#056daa;
+	color:#ffffff;
+	font-size:16px;
+	margin-left:115px;	
+}

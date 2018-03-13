@@ -1,0 +1,42 @@
+<script charset="utf-8" src="__PUBLIC__/admin/js/kindeditor/kindeditor-min.js"></script>
+<script charset="utf-8" src="__PUBLIC__/admin/js/kindeditor/lang/zh_CN.js"></script>
+<script type="text/javascript">
+var editor;
+KindEditor.ready(function(K) {
+	editor = K.create('textarea[name="content"]', {
+		allowFileManager : true
+	});				
+});
+</script>
+<div class="fixed">
+	<div class="nav"><h1>每日一图</h1></div>
+</div>
+<!-- <div class="ishere">当前位置：{$here}</div> -->
+<div class="tab">
+	<form action="{:U('Admin/Dayone/save')}" method="post" enctype="multipart/form-data">
+	<table width=100% class="table">
+		<tr>
+			<th>标题:</th>
+			<td><input type="text" name="title"/></td>
+		</tr>
+		
+		<tr>
+			<!-- 修改input样式  并显示缩略图 -->
+			<th>图片:</th>
+			<td><input multiple="multiple" type="file" name="image" value=""/></td>
+		</tr>
+		<tr>
+			<th>内容:</th>
+			<td><textarea name="content" style="height:300px;width:90%;"></textarea></td>
+		</tr>
+	</table>
+	<table class="submit">
+	<tr>
+		<td colspan="2">
+		<input type="hidden" name="dayphoto" value="1" />
+		<input type="submit" value="提交" id="submit"/>
+		</td>
+	</tr>
+	</table>
+	</form>
+</div>

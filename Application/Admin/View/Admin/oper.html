@@ -1,0 +1,47 @@
+<div class="fixed">
+	<div class="nav"><h1>管理员列表</h1></div>
+	<div class="search">
+	</div>
+</div>
+<div class="tab">
+	
+	<form action="__URL__/saveOrder" method="post">
+	<table style="width:100%" class="table">
+		<tr>
+			<th width="15%">id</th>
+			<th width="15%">姓名</th>
+			<th width="15%">员工编号</th>
+			<th width="15%">登录名</th>
+			<th width="20%">密码</th>
+			<th width="20%">操作</th>
+		</tr>
+		<foreach name='arr' item='v'>
+		<tr>
+			<th>{$v.id}</th>
+			
+			<th>{$v.name}</th>
+			
+			<th>{$v.number}</th>
+			
+			<th>{$v.username}</th>
+			
+			<th>{$v.password}</th>
+			
+			<th>
+				<a href="__MODULE__/Admin/update/id/{$v.id}"><img src="__PUBLIC__/admin/images/rewrite.png" alt="修改" title="修改" width="23px"/></a>&nbsp;&nbsp;
+				<a href="__MODULE__/Admin/del/id/{$v.id}/deleted/1" onClick="delcfm()"><img src="__PUBLIC__/admin/images/delete.png" alt="删除" title="删除" width="23px"/></a>
+			</th>
+			
+		</tr>
+		</foreach>
+	</table>
+	</form>
+	<div class="pages">{$pageStr}</div>
+</div>
+<script type="text/javascript">
+    function delcfm() {
+        if (!confirm("删除此管理员？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>

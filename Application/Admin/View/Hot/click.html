@@ -1,0 +1,32 @@
+
+<div class="fixed">
+	<div class="nav"><h1>点击排行</h1></div>
+</div>
+<div class="tab">
+	
+	<form action="__URL__/saveOrder" method="post">
+	<table style="width:100%" class="table">
+		<tr>
+			<th width="20%">新闻id</th>
+			<th width="20%">新闻标题</th>
+			<th width="20%">点击数</th>
+			<th width="20%">IP</th>
+			<th width="20%">点击时间</th>
+		</tr>
+		<foreach name='hot' item='v'>
+		<tr>
+			<th>{$v.id}</th>
+			
+			<td>{$v.title}</td>
+			
+			<th>{$v.clicknum}</th>
+			
+			<th>{$v.ip}</th>
+			
+			<th>{$v.clicktime}</th>
+		</tr>
+		</foreach>
+	</table>
+	</form>
+	<div class="yellow">{$pageStr}</div>
+</div>

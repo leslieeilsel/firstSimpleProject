@@ -1,0 +1,6 @@
+[ 2016-10-07T15:56:02+08:00 ] 127.0.0.1 /NG-ThinkPHP/index.php/admiin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001791s ]
+ERR: 无法加载模块:Admiin
+

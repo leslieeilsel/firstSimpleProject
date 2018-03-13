@@ -1,0 +1,330 @@
+unique 唯一
+
+模板替换标签
+__ROOT__	 :	  项目目录
+__APP__		 :	  入口文件--------->会替换成当前应用的URL地址 （不含域名）
+__MODULE__	 :	  当前模块
+__URL__		 :	  当前控制器
+__ACTION__	 :	  当前操作的方法
+__SELF__	 : 	  全部------------>会替换成当前的页面URL
+__PUBLIC__	 :	  当前网站的公共目录
+
+
+truncate table tablename 删除表数据 ID重排
+
+MVC
+ThinkPHP
+安装
+index.php
+<?php
+define('APP_DEBUG',true);
+define('APP_PATH',"./application/");
+require("./ThinkPHP/TinkPHP.php");
+
+目录结构
+application
+	common
+		common
+		conf
+	home
+		controller
+		conf
+		model
+		view
+		common
+	runtime
+
+url地址规则
+	***/index.php/模块名/控制器/方法/id/值
+	***/index.php?m=&c=&a=
+	***/index.php?s=模块名/控制器/方法&id=值
+C编写
+	1、声明规则
+	放在controller下
+	XxxController.class.php 类名和类文件名一致
+	必须继承Controller
+	方法没有 要求
+	2、访问控制
+	声明一个基类
+	function _init(){
+		//判断会话变量是否存在。
+		cookie  session
+		
+
+	}
+	3、Controller 的方法：
+	assign()
+	display()
+	success()
+	error()
+	show()
+	_initialize()
+	redirect()
+
+	U()
+M编写
+	1、修改配置文件
+	2、封装数据模型类
+	XxxModel.class.php
+	继承Model
+	放在model
+	指定表名：
+	protected $tableName="表名";
+	protected $trueTabelName="真实表名";
+	3、Model类的方法
+	table()
+	field()
+	alias()
+	join()
+	where()
+	group()
+	having()
+	order()
+	limit()
+	select()
+	find()
+	count()
+	add()
+	save()
+	data()
+	create()
+	4、自动验证
+	protected $_validate=array(
+		array('字段名','验证规则',"提示语",'条件',"附加规则",'事件'),
+	);
+	附加规则：
+	regex
+	unique
+	in
+	length
+	between
+	confirm
+	5、自动完成
+	protected $_auto=array(
+		array('字段','内容','时机','附加规则'),
+	);
+V编写：
+	模板标签
+	{$变量}
+	{$变量.下标}
+	<foreach name='名' item='v' key='k'>
+	{$v.下标}
+	</foreach>
+	<if condition="">
+	</if>
+	<if condition="">
+	<else/>
+	</if>
+	<if condition="">
+	<elseif condition=""/>
+	.....
+	<else/>
+	</if>
+	注意：
+	条件中不能使用比较运算符
+	eq
+	gt
+	lt
+	egt
+	elt
+	heq
+	nheq
+	neq
+	{$Think.const.名称}
+	{$Think.预定义变量.名称}
+	<include file=""/>
+	
+	__ROOT__
+	__APP__
+	__MODULE__
+	__URL__
+	__ACTION__
+	__SELF__
+	__PUBLIC__
+	
+公共类
+	Upload.class.php
+	Image.class.php
+	Verify.class.php
+	Page.class.php
+使用步骤：
+	1、获取总条数
+	2、确定每页的条数
+	3、实例化分页类
+	$page=new \Think\Page(总条数，每页的条数);
+	4、获取开始位置
+	$start=$page->firstRow;
+	5、获取当前页的数据
+	6、获取分页结果
+	$page->show();
+
+Yii
+安装
+php.exe -f ***/yiic.php webapp 项目的目录
+目录结构
+assets
+css
+js
+protected
+	controllers
+	models
+	views
+	mudules
+	runtime
+	config
+url规则
+	***/index.php?r=分组/控制器/方法&id=6
+C
+	1、XxxController.php
+	2、在controller下
+	3、必须继承Controller
+	4、actionXxx
+	
+	Controller类的方法：
+	redirect()
+	createUrl()
+	render()
+	renderPartial()
+	
+	布局：
+	public $layout="//layouts/my";
+	
+	分组，控制器和模板分组
+	使用助手程序
+	1、开启gii
+	2、***/index.php?r=gii
+	后台访问控制：admin
+	1、在admin下controllers/BaseController.php
+	把访问控制写在
+	function init(){
+		//访问控制
+	}
+	2、AdminModule.php  分组的入口文件
+	function beforeControllerAction($controller, $action){
+		$controller->id;//控制器类名
+		$action->id;//被执行的方法名	
+	}
+M
+	封装：
+	models/Xxx.php
+	类名和类文件同名
+	继承CActiveRecord
+	可以有两个方法：
+	public function tableName(){
+		return "{{表名}}";
+	}
+	public static function model($className=__CLASS__){
+		return parent::model($className);
+	}
+	CActiveRecored方法：
+	增
+	$ob=new Xxx();
+	$ob->字段名=值;
+	$ob->save();//执行自动验证
+	$ob->insert();
+
+	int $ob->getPrimaryKey();
+	删
+	delete()//删除谁找到谁
+	deleteByPk($id)
+	deleteAll($condition,$params)
+	改
+	$ob=Xxx::model();
+	//修改谁，找到谁
+	$ob=$ob->findByPk($id);
+	$ob->字段=值;
+	$ob->save();
+	
+	$ob->update();
+
+	$ob->updateAll($arr,$condition,$params)
+	$ob->upadteByPk($id,$arr)
+
+	查询
+	$ob=Xxx::model();
+	$ob->findAll($condition,$params)
+	$ob->find($condition,$params)
+	$ob->findByPk($id)
+	$ob->count($condition,$params);
+
+	sql语句子句的管理：
+三张表：
+	课程
+	create  table kecheng(
+		kid 
+		kname
+	)
+	1 数学
+	2 语文
+	3 php
+	学生表
+	create table xuesheng(
+		xid
+		xname
+	)
+	1 小张
+	2 小李
+	3 小赵
+	成绩表
+	create table chengji(
+		cid
+		kid
+		xid
+		score
+	)
+	cid kid xid score
+	1     1    1    55
+	2     2    1    60
+	3     3    1    65
+	4     1    2    80
+	5     2    2    81
+	6     3    2    99
+	7     1    3    55
+	8     2    3    38
+	9     3    3    85
+请查出各科成绩都优秀80的 学生。xid
+select xid,count(*) as num from chengji 
+where score>=80 group by xid having num=3
+
+select xid,min(score) as num from chengji 
+group by xid having num>=80
+
+	类CDbCriteria
+	condition=""
+	select=""
+	params=array()
+	group=""
+	having=""
+	order=""
+	limit=""
+	offset=""
+	join=""
+	alias=""
+	
+公共类
+
+
+
+
+
+
+
+session工作原理
+
+session缺点：
+	性能差，服务器压力大，文本文件过多，io操作慢
+如何解决：
+	把session值写到内存中。
+	session自定义：
+安全问题：
+	cookie模拟sessionid,启动失效的session
+
+	unset($_SESSION['下标'])
+	session_destroy()
+
+	
+
+
+
+
+

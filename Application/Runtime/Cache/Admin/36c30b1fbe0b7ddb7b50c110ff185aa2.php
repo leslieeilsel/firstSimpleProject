@@ -1,0 +1,203 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>国家地理</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="/Holland/NG-ThinkPHP/favicon.ico"/>
+<link href="/Holland/NG-ThinkPHP/Public/admin/css/main.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="/Holland/NG-ThinkPHP/Public/admin/css/style.css" />
+<link href="/Holland/NG-ThinkPHP/Public/admin/css/viewer.min.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="/Holland/NG-ThinkPHP/Public/admin/js/kindeditor/themes/simple/simple.css" />
+<script charset="utf-8" src="/Holland/NG-ThinkPHP/Public/admin/js/jquery.js"></script>
+<script charset="utf-8" src="/Holland/NG-ThinkPHP/Public/admin/js/viewer.min.js"></script>
+
+<script type="text/javascript">
+function setHeight(){
+	//alert(1);
+	WH=$(window).height();
+	$(".L").css("height",WH-90+"px");
+	$(".main").css("height",WH-90+"px");
+}
+$(function(){
+	setHeight();
+	$(window).resize(setHeight);
+});
+</script>
+
+</head>
+<body>
+<div class="national" style="width:100%;">
+	<div class="head">
+		<a href="<?php echo U('Home/Index/index');?>"><img src="/Holland/NG-ThinkPHP/Public/admin/images/logo.png" alt="进入前台页面" title="进入前台页面" width="100000px"/></a>
+		
+		<div class="admin">
+			<p>管理员 : <a href="#"><?php echo $_COOKIE['username']?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="<?php echo U('Admin/Login/login');?>" id="out">退出登录</a></p>
+		</div> 
+	</div>
+	<div class="content clear">
+		<div class="L" style="overflow-y:auto;">
+			<div class="sideMenu">
+				<ul>
+					<li class="nLi on">
+						<h3>文章管理</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Photo/add">发布图文</a></li>
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Photo/oper">图文列表</a></li>
+						</ul>
+					</li>
+					<li class="nLi on">
+						<h3>每日一图</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Dayone/day">每日一图</a></li>
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Dayone/daylist">管理</a></li>
+						</ul>
+					</li>
+					<li class="nLi on">
+						<h3>栏目</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Category/add">栏目添加</a></li>
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Category/oper">栏目管理</a></li>
+						</ul>
+					</li>
+					<li class="nLi on">
+						<h3>回收站</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Photo/recycle">已删除图文</a></li>
+						</ul>
+					</li>
+					
+					<li class="nLi on">
+						<h3>排行</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Hot/click">点击排行</a></li>
+						</ul>
+					</li>
+					
+					<li class="nLi on">
+						<h3>管理员</h3>
+						<ul class="sub">
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Admin/add">添加管理员</a></li>
+							<li><a href="/Holland/NG-ThinkPHP/index.php/Admin/Admin/oper">已有管理员</a></li>
+						</ul>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<!-- 滑动 展开隐藏效果 -->
+			<script type="text/javascript">
+			    $(function(){
+			        $(".sideMenu .nLi h3").click(function(){
+			            if($(this).parent(".nLi").hasClass("on")){
+			                $(this).next(".sub").slideUp(300,function(){
+			                    $(this).parent(".nLi").removeClass("on")
+			                });
+			            }else{
+			                $(this).next(".sub").slideDown(300,function(){
+			                    $(this).parent(".nLi").addClass("on")
+			                });
+			            }
+			        })
+			    })
+			</script>
+			<!-- 百叶窗效果
+			<script type="text/javascript">
+			    $(function(){
+			        $(".L .sideMenu .nLi h3").click(function(){
+			            if($(this).parent(".nLi").hasClass("on")){
+			                //当前状态展开的时候，继续点击无效
+			            }else{
+			                $(this).parents("ul").find(".sub").slideUp(300,function(){
+			                    $(this).parents("ul").find(".nLi").removeClass("on");
+			                });
+			                $(this).next(".sub").slideDown(300,function(){
+			                    $(this).parent(".nLi").addClass("on");
+			                });
+			            }
+			        })
+			    })
+			</script> -->
+		</div>
+		<div class="R">
+			<div class="main">
+			<script type="text/javascript"> 
+   $(function(){ 
+         $("#submit").click(function(){ 
+              $("form[name='form']").submit();
+         }) 
+    }) 
+</script>
+<div class="fixed">
+	<div class="nav"><h1>栏目管理</h1></div>
+	<div class="search">
+		<p>* 如有更改,请点击 <u>刷新列表</u> *</p> 
+	</div>
+</div>
+<div class="tab">
+	
+	<form action="/Holland/NG-ThinkPHP/index.php/Admin/Category/saveOrder" method="post">
+	<table style="width:100%" class="table">
+		<tr>
+			<th width="20%">ID</th>
+			<th width="20%">排序值</th>
+			<th width="30%">名称</th>
+			<!-- <th width="15%">是否显示</th> -->
+			<th width="30%">操作</th>
+		</tr>
+		<?php if(is_array($arr)): foreach($arr as $key=>$v): ?><tr>
+			<th><?php echo ($v["id"]); ?></th>
+			
+			<th>
+				<input type="text" name="ordernum[<?php echo ($v["id"]); ?>]" value="<?php echo ($v["ordernum"]); ?>" style="width:100px;text-align:center"/>
+			</th>
+			
+			<?php if($v["fid"] == 0): ?><td style="padding-left:20px">+— &nbsp;:&nbsp; <?php echo ($v["cname"]); ?></td>
+			<?php else: ?>
+				<td style="padding-left:20px">+———— &nbsp;:&nbsp; <?php echo ($v["cname"]); ?></td><?php endif; ?>
+			
+			<!-- 
+			是否显示
+			<td style="text-align:center">
+				<?php if($v["isshow"] == 0): ?><input type="radio" name="isshow" value='0' checked='checked'/><?php echo ($v["isshow"]); ?>不显示&nbsp;&nbsp;
+					<input type="radio" name="isshow[<?php echo ($v["id"]); ?>]" value="1"/>显示
+				<?php elseif($v["isshow"] == 1): ?>
+					<input type="radio" name="isshow[<?php echo ($v["id"]); ?>]" value='0'/>不显示&nbsp;&nbsp;
+					<input type="radio" name="isshow" value="1" checked='checked'/><?php echo ($v["isshow"]); ?>显示<?php endif; ?>
+			</td> -->
+			
+			
+			<th>
+				<a href="/Holland/NG-ThinkPHP/index.php/Admin/Category/update/id/<?php echo ($v["id"]); ?>"><img src="/Holland/NG-ThinkPHP/Public/admin/images/rewrite.png" alt="修改" title="修改" width="23px"/></a>&nbsp;&nbsp;
+				<a href="/Holland/NG-ThinkPHP/index.php/Admin/Category/del/id/<?php echo ($v["id"]); ?>/deleted/1" onClick="delcfm()"><img src="/Holland/NG-ThinkPHP/Public/admin/images/delete.png" alt="删除" title="删除" width="23px"/></a>
+			</th>
+			
+		</tr><?php endforeach; endif; ?>
+	</table>
+	<table class="submit">
+		
+		<tr>
+			<td colspan="2"><input type="submit" value="刷新列表"  onClick="orderallcfm()" id="submit"/></td>
+		</tr>
+	</table>
+	</form>
+</div>
+<script type="text/javascript">
+    function orderallcfm() {
+        if (!confirm("确认提交排序？")) {
+            window.event.returnValue = false;
+        }
+    }
+
+    function delcfm() {
+        if (!confirm("确认删除此栏目？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>
+
+			</div>
+		</div>
+	</div>
+</div>	
+</body>
+</html>

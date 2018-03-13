@@ -1,0 +1,54 @@
+[ 2016-09-30T15:26:12+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/bg4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:26:12+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/icon-pwd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:26:12+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/icon-user.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:29:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/icon-user.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:29:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/bg4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:29:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/images/icon-pwd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000821s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:31:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/css/__ROOT__/Public/admin/images/login/bg4.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000732s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:31:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/css/__ROOT__/Public/admin/images/login/icon-pwd.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+ERR: 无法加载模块:Public
+
+[ 2016-09-30T15:31:27+08:00 ] 127.0.0.1 /NG-ThinkPHP/Public/admin/css/__ROOT__/Public/admin/images/login/icon-user.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+ERR: 无法加载模块:Public
+
